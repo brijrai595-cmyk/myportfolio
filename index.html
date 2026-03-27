@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhinav Rai | Gaming Portfolio</title>
+    <meta
+      name="description"
+      content="Abhinav Rai - Class 10 student, gamer, and aspiring game creator. Explore my gaming achievements, projects, and dreams."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-background">
+      <div class="grid"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">AR</span>
+        <div class="logo-text">
+          <span class="logo-main">Abhinav Rai</span>
+          <span class="logo-sub">Gaming Universe</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#games">Favourite Games</a>
+        <a href="#projects">Game Ideas</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon theme-icon--moon">☾</span>
+        <span class="theme-icon theme-icon--sun">☼</span>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="section hero">
+        <div class="hero-content">
+          <p class="hero-kicker">Class 10 • Gamer • Creator</p>
+          <h1>
+            Hi, I'm <span class="accent">Abhinav</span>
+            <span class="hero-subtitle">I turn gaming into stories & ideas.</span>
+          </h1>
+          <p class="hero-description">
+            I love games, from fast-paced shooters to deep strategy worlds.
+            This portfolio is my personal gaming universe — showing who I am,
+            what I play, and the game ideas I dream of building one day.
+          </p>
+
+          <div class="hero-highlights">
+            <div class="hero-highlight-card">
+              <span class="hero-highlight-label">Primary Role</span>
+              <h3>All‑Round Gamer</h3>
+              <p>Action • Battle Royale • Racing • Strategy</p>
+            </div>
+            <div class="hero-highlight-card">
+              <span class="hero-highlight-label">Focus</span>
+              <h3>Game Creation Journey</h3>
+              <p>Designing levels, stories, and mechanics as ideas.</p>
+            </div>
+            <div class="hero-highlight-card">
+              <span class="hero-highlight-label">Goal</span>
+              <h3>Future Game Developer</h3>
+              <p>Learning coding & game design step by step.</p>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Game Ideas</a>
+            <a href="#contact" class="btn btn-ghost">Team Up With Me</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-stat">
+              <span class="hero-stat-number" data-target="5">0</span>
+              <span class="hero-stat-label">+ Game Concepts</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number" data-target="10">0</span>
+              <span class="hero-stat-label">+ Favourite Titles</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number" data-target="3">0</span>
+              <span class="hero-stat-label">+ Esports Roles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-card game-card">
+            <h2>Player Profile</h2>
+            <div class="stat-row">
+              <span>IGN</span>
+              <span class="value">AbhinavRai</span>
+            </div>
+            <div class="stat-row">
+              <span>Play Style</span>
+              <span class="value">Aggressive / Tactical Hybrid</span>
+            </div>
+            <div class="stat-row">
+              <span>Strengths</span>
+              <span class="value">Aim • Strategy • Teamwork</span>
+            </div>
+            <div class="stat-row">
+              <span>Current Quest</span>
+              <span class="value">Learn Game Development</span>
+            </div>
+          </div>
+
+          <div class="hero-card role-switcher">
+            <h3>Choose My Role</h3>
+            <div class="pill-group" id="roleTabs">
+              <button class="pill pill--active" data-role="gamer">Gamer</button>
+              <button class="pill" data-role="creator">Game Creator</button>
+              <button class="pill" data-role="esports">Esports</button>
+            </div>
+            <p class="role-text" id="roleText">
+              As a <strong>Gamer</strong>, I love exploring new worlds, mastering game mechanics, and learning from every match.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="section-header">
+          <p class="section-kicker">About Me</p>
+          <h2>Who I Am Beyond The Screen</h2>
+          <p class="section-intro">
+            I'm a Class 10 student who loves combining studies with gaming.
+            For me, games are not just for fun — they teach strategy, focus,
+            teamwork, and creativity. I’m slowly turning my passion for gaming
+            into a path towards game development and technology.
+          </p>
+        </div>
+
+        <div class="grid about-grid">
+          <div class="card about-card">
+            <h3>Student Life</h3>
+            <ul class="tag-list">
+              <li>Class 10 student</li>
+              <li>Interested in Science & Tech</li>
+              <li>Always curious & experimenting</li>
+            </ul>
+            <p>
+              I balance academics with gaming, using my time to both study and
+              explore the gaming world. I believe discipline in studies and
+              passion in gaming can go together.
+            </p>
+          </div>
+
+          <div class="card about-card">
+            <h3>Gaming Mindset</h3>
+            <ul class="tag-list">
+              <li>Team player</li>
+              <li>Quick learner</li>
+              <li>Never gives up</li>
+            </ul>
+            <p>
+              I treat every game like a challenge: understand the rules,
+              practice the skills, learn from mistakes, and come back stronger.
+              This mindset also helps me in real life and in my studies.
+            </p>
+          </div>
+
+          <div class="card about-card">
+            <h3>Future Vision</h3>
+            <ul class="tag-list">
+              <li>Game development</li>
+              <li>Esports strategy</li>
+              <li>Creative world‑building</li>
+            </ul>
+            <p>
+              My dream is to create games that people will remember — with
+              unique stories, fun mechanics, and meaningful experiences. This
+              portfolio is the first step on that journey.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="section-header">
+          <p class="section-kicker">Skills & Powers</p>
+          <h2>My Gaming & Starter Tech Skills</h2>
+          <p class="section-intro">
+            These are the abilities I’m building — from in‑game skills to early
+            steps into coding and game creation.
+          </p>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-column">
+            <h3>Gaming Skills</h3>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Aim & Reflexes</span>
+                <span>High</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--level: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Game Sense & Strategy</span>
+                <span>Strong</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--level: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Team Communication</span>
+                <span>Strong</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--level: 78%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Patience & Consistency</span>
+                <span>Growing</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--level: 70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3>Tech & Creative Skills</h3>
+            <div class="pill-list">
+              <span class="pill">Learning HTML & CSS</span>
+              <span class="pill">Basic JavaScript</span>
+              <span class="pill">Interested in Unity / Unreal</span>
+              <span class="pill">Story & Level Design</span>
+              <span class="pill">UI ideas & Game Menus</span>
+              <span class="pill">Brainstorming Game Concepts</span>
+            </div>
+            <p class="skills-note">
+              I’m in the early stages of learning programming and game
+              development, slowly understanding how games are built behind the
+              scenes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAVOURITE GAMES -->
+      <section id="games" class="section">
+        <div class="section-header">
+          <p class="section-kicker">Favourite Games</p>
+          <h2>Worlds That Inspire Me</h2>
+          <p class="section-intro">
+            These are examples of the types of games I enjoy — fast, strategic,
+            and full of excitement. You can replace them with your real
+            favourites later.
+          </p>
+        </div>
+
+        <div class="grid cards-grid">
+          <article class="card game-tile">
+            <div class="game-tile-tag">Battle Royale</div>
+            <h3>Arena Drop</h3>
+            <p>
+              High‑intensity matches, smart positioning, and clutch plays.
+              Teaches me to stay calm in pressure situations and make quick
+              decisions.
+            </p>
+            <ul class="mini-list">
+              <li>Preferred role: Entry fragger / support</li>
+              <li>Strength: Fast reactions & movement</li>
+              <li>Love: Last‑circle mind games</li>
+            </ul>
+          </article>
+
+          <article class="card game-tile">
+            <div class="game-tile-tag">Racing</div>
+            <h3>Neon Streets</h3>
+            <p>
+              Tight controls, perfect timing, and clean racing lines.
+              Improves my focus, coordination, and handling under speed.
+            </p>
+            <ul class="mini-list">
+              <li>Preferred view: First person / cockpit</li>
+              <li>Strength: Cornering & timing boosts</li>
+              <li>Love: Time trial challenges</li>
+            </ul>
+          </article>
+
+          <article class="card game-tile">
+            <div class="game-tile-tag">Strategy</div>
+            <h3>Kingdom Tactician</h3>
+            <p>
+              Planning ahead, managing resources, and making smart trades.
+              Helps me think long‑term and see the bigger picture.
+            </p>
+            <ul class="mini-list">
+              <li>Preferred mode: Ranked strategy</li>
+              <li>Strength: Reading opponents</li>
+              <li>Love: Creative strategies & comebacks</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- GAME IDEAS / PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <p class="section-kicker">Game Concepts</p>
+          <h2>Game Ideas From My Imagination</h2>
+          <p class="section-intro">
+            I may be in Class 10, but my mind is already full of game concepts.
+            These are idea‑level "projects" — the kind of games I’d love to
+            build one day as I learn more coding and game design.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>01 • Neon Runner City</h3>
+              <p class="timeline-tagline">
+                Endless runner with story‑based missions.
+              </p>
+              <p>
+                You play as a courier in a neon futuristic city, dodging
+                traffic, jumping rooftops, and unlocking secret routes. The
+                game combines speed with short story missions and choices.
+              </p>
+              <ul class="mini-list">
+                <li>Core idea: Smooth parkour + branching missions</li>
+                <li>Mechanics: Slide, wall‑run, slow‑motion jumps</li>
+                <li>Inspiration: Runner games + cyberpunk themes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>02 • Sky Chess Arena</h3>
+              <p class="timeline-tagline">
+                Strategy game mixing chess and arena combat.
+              </p>
+              <p>
+                Classic chess pieces come to life in a floating arena. Each
+                piece has special abilities and cooldowns. You think like a
+                chess player but fight like an arena gamer.
+              </p>
+              <ul class="mini-list">
+                <li>Core idea: Strategy + real‑time action</li>
+                <li>Mechanics: Ability combos & special moves</li>
+                <li>Inspiration: Chess, MOBAs, hero shooters</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>03 • Puzzle of Time</h3>
+              <p class="timeline-tagline">
+                Story‑driven puzzle game about time loops.
+              </p>
+              <p>
+                You wake up in the same day again and again. Each loop lets you
+                keep knowledge but not items. The challenge is to solve puzzles
+                using information you learn over multiple loops.
+              </p>
+              <ul class="mini-list">
+                <li>Core idea: Learning‑based progression</li>
+                <li>Mechanics: Timelines, clues, hidden routes</li>
+                <li>Inspiration: Story games & puzzle adventures</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS -->
+      <section id="achievements" class="section">
+        <div class="section-header">
+          <p class="section-kicker">Achievements</p>
+          <h2>My Gaming & Personal Highlights</h2>
+          <p class="section-intro">
+            These are sample achievements that you can later customize with
+            your real stats, ranks, and milestones.
+          </p>
+        </div>
+
+        <div class="grid cards-grid">
+          <article class="card achievement-card">
+            <h3>Top Ranks & Clutch Moments</h3>
+            <p>
+              Reached high ranks in multiple competitive modes and pulled off
+              clutch plays in last‑circle or final‑round situations.
+            </p>
+            <ul class="mini-list">
+              <li>Multiple top 10 finishes in ranked modes</li>
+              <li>High K/D ratio in shooter‑style games</li>
+              <li>Known among friends for clutch comebacks</li>
+            </ul>
+          </article>
+
+          <article class="card achievement-card">
+            <h3>Team Leadership</h3>
+            <p>
+              Led small squads of friends in online games, making strategies,
+              call‑outs, and planning rotations and pushes.
+            </p>
+            <ul class="mini-list">
+              <li>Shot‑caller in team fights</li>
+              <li>Helps new players understand the game</li>
+              <li>Focus on positive, non‑toxic gameplay</li>
+            </ul>
+          </article>
+
+          <article class="card achievement-card">
+            <h3>Learning & Growth</h3>
+            <p>
+              Started exploring how games are made, from simple web games to 2D
+              platformers, and learning basic coding step by step.
+            </p>
+            <ul class="mini-list">
+              <li>Experimenting with simple HTML / CSS games</li>
+              <li>Watching tutorials on game engines</li>
+              <li>Writing game ideas in a personal notebook</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="section-header">
+          <p class="section-kicker">Let’s Connect</p>
+          <h2>Team Up Or Talk About Games</h2>
+          <p class="section-intro">
+            Want to play together, discuss game ideas, or just connect? You can
+            fill this form and later hook it up to email or a backend service.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="card contact-card">
+            <h3>Contact Form</h3>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email or ID</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email or in‑game ID"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="reason">Reason</label>
+                <select id="reason" name="reason">
+                  <option value="play">Play a game together</option>
+                  <option value="ideas">Talk about game ideas</option>
+                  <option value="learn">Learn game dev together</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Write your message here..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">
+                Send Message (Demo)
+              </button>
+              <p class="form-note">
+                This is a front‑end only form right now. You can connect it to
+                a real email service later.
+              </p>
+            </form>
+          </div>
+
+          <div class="card contact-card contact-side">
+            <h3>Quick Info</h3>
+            <ul class="mini-list">
+              <li><strong>Name:</strong> Abhinav Rai</li>
+              <li><strong>Class:</strong> 10</li>
+              <li><strong>Focus:</strong> Gaming & Game Creation</li>
+              <li><strong>Location:</strong> India (replace if needed)</li>
+            </ul>
+            <p>
+              You can also customize this section later with your real social
+              media handles or platforms where you play (Steam, Epic, Play
+              Store, etc.).
+            </p>
+
+            <div class="profile-tags">
+              <span class="pill">Future Game Dev</span>
+              <span class="pill">Esports Enthusiast</span>
+              <span class="pill">Creative Thinker</span>
+              <span class="pill">Strategic Player</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Abhinav Rai. Built with passion for gaming and
+        imagination.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

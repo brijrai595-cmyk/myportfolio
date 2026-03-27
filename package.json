@@ -1,0 +1,10 @@
+{
+  "name": "abhinav-gaming-portfolio",
+  "version": "1.0.0",
+  "description": "A gaming-themed portfolio site for Abhinav Rai (Class 10).",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Open index.html directly in a browser to view this portfolio.\""
+  }
+}
+
