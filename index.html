@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abhinav Rai | Gaming Portfolio</title>
+    <title>Abhinav Rai | Gaming &amp; Anime Portfolio</title>
     <meta
       name="description"
-      content="Abhinav Rai — Class 10 student, passionate gamer, and aspiring game developer. Explore gaming achievements, original game concepts, and creative ideas."
+      content="Abhinav Rai — Class 10 student, passionate gamer, anime fan, and aspiring game developer. Pokémon trainer, anime lover, and future game creator."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Press+Start+2P&family=Orbitron:wght@400;600;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Press+Start+2P&family=Orbitron:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,12 +19,15 @@
   <body>
     <!-- PARTICLE CANVAS -->
     <canvas id="particleCanvas" aria-hidden="true"></canvas>
+    <!-- SAKURA PETAL CANVAS -->
+    <canvas id="sakuraCanvas" aria-hidden="true"></canvas>
 
     <div class="page-background">
       <div class="grid-overlay"></div>
       <div class="glow glow-1"></div>
       <div class="glow glow-2"></div>
       <div class="glow glow-3"></div>
+      <div class="glow glow-4"></div>
     </div>
 
     <!-- HEADER -->
@@ -36,18 +39,20 @@
         </div>
         <div class="logo-text">
           <span class="logo-main">Abhinav Rai</span>
-          <span class="logo-sub">Gaming Universe</span>
+          <span class="logo-sub">Gamer &bull; Otaku &bull; Creator</span>
         </div>
       </div>
 
       <nav class="main-nav" id="mainNav">
-        <a href="#hero" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#games" class="nav-link">Games</a>
-        <a href="#projects" class="nav-link">Game Ideas</a>
+        <a href="#hero"         class="nav-link">Home</a>
+        <a href="#about"        class="nav-link">About</a>
+        <a href="#skills"       class="nav-link">Skills</a>
+        <a href="#games"        class="nav-link">Games</a>
+        <a href="#anime"        class="nav-link">Anime</a>
+        <a href="#pokemon"      class="nav-link">Pokémon</a>
+        <a href="#projects"     class="nav-link">Game Ideas</a>
         <a href="#achievements" class="nav-link">Achievements</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact"      class="nav-link">Contact</a>
       </nav>
 
       <div class="header-right">
@@ -64,13 +69,15 @@
     <!-- MOBILE NAV DRAWER -->
     <div class="mobile-nav" id="mobileNav">
       <nav>
-        <a href="#hero" class="mobile-link">Home</a>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#skills" class="mobile-link">Skills</a>
-        <a href="#games" class="mobile-link">Games</a>
-        <a href="#projects" class="mobile-link">Game Ideas</a>
-        <a href="#achievements" class="mobile-link">Achievements</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#hero"         class="mobile-link">🏠 Home</a>
+        <a href="#about"        class="mobile-link">👤 About</a>
+        <a href="#skills"       class="mobile-link">⚔️ Skills</a>
+        <a href="#games"        class="mobile-link">🎮 Games</a>
+        <a href="#anime"        class="mobile-link">⛩️ Anime</a>
+        <a href="#pokemon"      class="mobile-link">🔴 Pokémon</a>
+        <a href="#projects"     class="mobile-link">💡 Game Ideas</a>
+        <a href="#achievements" class="mobile-link">🏆 Achievements</a>
+        <a href="#contact"      class="mobile-link">📬 Contact</a>
       </nav>
     </div>
 
@@ -78,39 +85,55 @@
     <div class="ticker-wrap" aria-hidden="true">
       <div class="ticker-list">
         <span>⚡ Battle Royale</span>
+        <span>🌸 Anime Fan</span>
+        <span>🔴 Pokémon Trainer</span>
         <span>🎮 Open World RPG</span>
+        <span>⚔️ Attack on Titan</span>
         <span>🏎️ Racing</span>
+        <span>🌙 Demon Slayer</span>
+        <span>🔥 Naruto Fan</span>
         <span>♟️ Strategy</span>
+        <span>⭐ One Piece</span>
         <span>🌌 Sci-Fi Shooter</span>
-        <span>🗺️ Survival Craft</span>
-        <span>🤺 Hack & Slash</span>
-        <span>🧩 Puzzle</span>
+        <span>🐉 Dragon Ball Z</span>
         <span>⚡ Battle Royale</span>
+        <span>🌸 Anime Fan</span>
+        <span>🔴 Pokémon Trainer</span>
         <span>🎮 Open World RPG</span>
+        <span>⚔️ Attack on Titan</span>
         <span>🏎️ Racing</span>
+        <span>🌙 Demon Slayer</span>
+        <span>🔥 Naruto Fan</span>
         <span>♟️ Strategy</span>
+        <span>⭐ One Piece</span>
         <span>🌌 Sci-Fi Shooter</span>
-        <span>🗺️ Survival Craft</span>
-        <span>🤺 Hack & Slash</span>
-        <span>🧩 Puzzle</span>
+        <span>🐉 Dragon Ball Z</span>
       </div>
     </div>
 
     <main>
-      <!-- HERO -->
+      <!-- ════ HERO ════ -->
       <section id="hero" class="section hero">
+        <!-- Anime quote typing strip -->
+        <div class="anime-quote-strip">
+          <span class="quote-jp">「</span>
+          <span id="animeQuoteText" class="quote-body"></span>
+          <span class="quote-cursor">|</span>
+          <span class="quote-jp">」</span>
+        </div>
+
         <div class="hero-content">
           <p class="hero-kicker">
-            <span class="kicker-dot"></span>Class 10 &bull; Gamer &bull; Creator
+            <span class="kicker-dot"></span>Class 10 &bull; Gamer &bull; Otaku &bull; Creator
           </p>
           <h1>
             Hi, I'm <span class="accent">Abhinav</span>
-            <span class="hero-subtitle">I turn gaming into stories &amp; ideas.</span>
+            <span class="hero-subtitle">I turn gaming &amp; anime into stories &amp; ideas.</span>
           </h1>
           <p class="hero-description">
-            I love games — from fast-paced battle royales to deep strategy worlds.
-            This portfolio is my personal gaming universe, showing who I am, what I
-            play, and the game ideas I dream of building one day.
+            I love games and anime — from fast-paced battle royales to epic shōnen arcs.
+            This portfolio is my personal universe, showing who I am, what I
+            play and watch, and the game ideas I dream of building.
           </p>
 
           <div class="hero-highlights">
@@ -120,23 +143,27 @@
               <p>Action &bull; Battle Royale &bull; Racing &bull; Strategy</p>
             </div>
             <div class="hero-highlight-card tilt-card">
-              <span class="hero-highlight-label">Focus</span>
-              <h3>Game Creation Journey</h3>
-              <p>Designing levels, stories, and mechanics as concepts.</p>
+              <span class="hero-highlight-label">Fandom</span>
+              <h3>Dedicated Otaku</h3>
+              <p>Shōnen &bull; Isekai &bull; Pokémon &bull; Seinen</p>
             </div>
             <div class="hero-highlight-card tilt-card">
               <span class="hero-highlight-label">Goal</span>
-              <h3>Future Game Developer</h3>
+              <h3>Future Game Dev</h3>
               <p>Learning coding &amp; game design step by step.</p>
             </div>
           </div>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">
+            <a href="#pokemon" class="btn btn-primary">
               <span class="btn-glow"></span>
-              🎮 View My Game Ideas
+              🔴 View My Trainer Card
             </a>
-            <a href="#contact" class="btn btn-ghost">🤝 Team Up With Me</a>
+            <a href="#anime" class="btn btn-sakura">
+              <span class="btn-glow"></span>
+              🌸 My Anime World
+            </a>
+            <a href="#contact" class="btn btn-ghost">🤝 Team Up</a>
           </div>
 
           <div class="hero-meta">
@@ -145,19 +172,19 @@
               <span class="hero-stat-label">+ Game Concepts</span>
             </div>
             <div class="hero-stat">
-              <span class="hero-stat-number" data-target="10">0</span>
-              <span class="hero-stat-label">+ Favourite Titles</span>
+              <span class="hero-stat-number" data-target="15">0</span>
+              <span class="hero-stat-label">+ Anime Watched</span>
             </div>
             <div class="hero-stat">
-              <span class="hero-stat-number" data-target="3">0</span>
-              <span class="hero-stat-label">+ Esports Roles</span>
+              <span class="hero-stat-number" data-target="6">0</span>
+              <span class="hero-stat-label">Pokémon Team</span>
             </div>
           </div>
         </div>
 
         <div class="hero-panel">
           <div class="hero-card game-card tilt-card" id="playerCard">
-            <div class="card-badge">🎮 LIVE</div>
+            <div class="card-badge">🎮 ACTIVE</div>
             <h2>Player Profile</h2>
             <div class="stat-row">
               <span>IGN</span>
@@ -168,12 +195,16 @@
               <span class="value">Aggressive / Tactical</span>
             </div>
             <div class="stat-row">
-              <span>Strengths</span>
-              <span class="value">Aim &bull; Strategy &bull; Teamwork</span>
+              <span>Fandom</span>
+              <span class="value sakura-text">Otaku ⛩️</span>
+            </div>
+            <div class="stat-row">
+              <span>Starter</span>
+              <span class="value neon-text">Charmander 🔥</span>
             </div>
             <div class="stat-row">
               <span>Current Quest</span>
-              <span class="value neon-text">Learn Game Dev 🚀</span>
+              <span class="value">Learn Game Dev 🚀</span>
             </div>
             <div class="xp-bar-wrap">
               <div class="xp-label">
@@ -188,7 +219,8 @@
             <div class="pill-group" id="roleTabs">
               <button class="pill pill--active" data-role="gamer">Gamer</button>
               <button class="pill" data-role="creator">Creator</button>
-              <button class="pill" data-role="esports">Esports</button>
+              <button class="pill" data-role="otaku">Otaku</button>
+              <button class="pill" data-role="trainer">Trainer</button>
             </div>
             <p class="role-text" id="roleText">
               As a <strong>Gamer</strong>, I love exploring new worlds, mastering
@@ -198,16 +230,16 @@
         </div>
       </section>
 
-      <!-- ABOUT -->
+      <!-- ════ ABOUT ════ -->
       <section id="about" class="section">
         <div class="section-header">
           <p class="section-kicker">About Me</p>
           <h2>Who I Am Beyond The Screen</h2>
           <p class="section-intro">
-            I'm a Class 10 student who loves combining studies with gaming. For me,
-            games are not just for fun — they teach strategy, focus, teamwork, and
-            creativity. I'm slowly turning my passion for gaming into a path towards
-            game development and technology.
+            I'm a Class 10 student who loves gaming, anime, and Pokémon equally.
+            For me, they're not just hobbies — they teach strategy, creativity,
+            perseverance, and imagination. I'm turning that passion into a path
+            to becoming a game developer.
           </p>
         </div>
 
@@ -220,24 +252,18 @@
               <li>Science &amp; Tech</li>
               <li>Always Experimenting</li>
             </ul>
-            <p>
-              I balance academics with gaming — discipline in studies and passion in
-              gaming can absolutely coexist and reinforce each other.
-            </p>
+            <p>I balance academics with gaming and anime. Discipline in studies and passion in hobbies can absolutely coexist.</p>
           </div>
 
           <div class="card about-card tilt-card">
-            <div class="card-icon">🧠</div>
-            <h3>Gaming Mindset</h3>
+            <div class="card-icon">⛩️</div>
+            <h3>Anime Mindset</h3>
             <ul class="tag-list">
-              <li>Team Player</li>
-              <li>Quick Learner</li>
-              <li>Never Gives Up</li>
+              <li>Never Give Up</li>
+              <li>Protect Friends</li>
+              <li>Train Every Day</li>
             </ul>
-            <p>
-              I treat every game like a challenge — understand the rules, practice
-              the skills, learn from mistakes, and come back stronger.
-            </p>
+            <p>Anime taught me that hard work beats talent, bonds matter, and every setback is a setup for a bigger comeback.</p>
           </div>
 
           <div class="card about-card tilt-card">
@@ -245,102 +271,68 @@
             <h3>Future Vision</h3>
             <ul class="tag-list">
               <li>Game Development</li>
-              <li>Esports Strategy</li>
+              <li>Anime-Inspired Games</li>
               <li>World-Building</li>
             </ul>
-            <p>
-              My dream is to create games people will remember — unique stories, fun
-              mechanics, and meaningful experiences.
-            </p>
+            <p>My dream is to create games inspired by anime and Pokémon — rich worlds, epic battles, deep stories.</p>
           </div>
         </div>
       </section>
 
-      <!-- SKILLS -->
+      <!-- ════ SKILLS ════ -->
       <section id="skills" class="section">
         <div class="section-header">
           <p class="section-kicker">Skills &amp; Powers</p>
-          <h2>My Gaming &amp; Starter Tech Skills</h2>
-          <p class="section-intro">
-            These are the abilities I'm building — from in-game mastery to early
-            steps into coding and game creation.
-          </p>
+          <h2>My Stats &amp; Abilities</h2>
+          <p class="section-intro">Think of this like a character stats screen — these are the skills I'm actively levelling up.</p>
         </div>
 
         <div class="skills-layout">
           <div class="skills-column">
             <h3>⚔️ Gaming Skills</h3>
             <div class="skill-item">
-              <div class="skill-label">
-                <span>Aim &amp; Reflexes</span>
-                <span class="skill-badge">High</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="--level: 85%"></div>
-                <span class="skill-percent">85%</span>
-              </div>
+              <div class="skill-label"><span>Aim &amp; Reflexes</span><span class="skill-badge">High</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--level:85%"></div><span class="skill-percent">85%</span></div>
             </div>
             <div class="skill-item">
-              <div class="skill-label">
-                <span>Game Sense &amp; Strategy</span>
-                <span class="skill-badge">Strong</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="--level: 80%"></div>
-                <span class="skill-percent">80%</span>
-              </div>
+              <div class="skill-label"><span>Game Sense &amp; Strategy</span><span class="skill-badge">Strong</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--level:80%"></div><span class="skill-percent">80%</span></div>
             </div>
             <div class="skill-item">
-              <div class="skill-label">
-                <span>Team Communication</span>
-                <span class="skill-badge">Strong</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="--level: 78%"></div>
-                <span class="skill-percent">78%</span>
-              </div>
+              <div class="skill-label"><span>Team Communication</span><span class="skill-badge">Strong</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--level:78%"></div><span class="skill-percent">78%</span></div>
             </div>
             <div class="skill-item">
-              <div class="skill-label">
-                <span>Patience &amp; Consistency</span>
-                <span class="skill-badge">Growing</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="--level: 70%"></div>
-                <span class="skill-percent">70%</span>
-              </div>
+              <div class="skill-label"><span>Pokémon Strategy</span><span class="skill-badge">Expert</span></div>
+              <div class="skill-bar"><div class="skill-fill sakura-fill" style="--level:88%"></div><span class="skill-percent">88%</span></div>
             </div>
           </div>
 
           <div class="skills-column">
-            <h3>💻 Tech &amp; Creative Skills</h3>
+            <h3>🌸 Anime &amp; Tech Skills</h3>
             <div class="tech-pills">
               <span class="tech-pill">🌐 HTML &amp; CSS</span>
-              <span class="tech-pill">⚡ Basic JavaScript</span>
+              <span class="tech-pill">⚡ JavaScript</span>
               <span class="tech-pill">🎮 Unity (Learning)</span>
-              <span class="tech-pill">🎮 Unreal Interest</span>
               <span class="tech-pill">🗺️ Level Design</span>
               <span class="tech-pill">📖 Story Writing</span>
-              <span class="tech-pill">🎨 UI Concept Art</span>
-              <span class="tech-pill">🧩 Game Mechanics</span>
+              <span class="tech-pill">⛩️ Anime Theory</span>
+              <span class="tech-pill">🔴 Pokémon Meta</span>
+              <span class="tech-pill">🎨 Character Design</span>
             </div>
             <p class="skills-note">
-              I'm in the early stages of learning programming and game development,
-              slowly understanding how amazing games are made behind the scenes.
+              Anime and games both teach storytelling. I'm learning to combine them into game design concepts that feel truly alive.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- FAVOURITE GAMES -->
+      <!-- ════ FAVOURITE GAMES ════ -->
       <section id="games" class="section">
         <div class="section-header">
           <p class="section-kicker">Favourite Games</p>
           <h2>Worlds That Inspire Me</h2>
-          <p class="section-intro">
-            These are the types of games that fuel my imagination — fast, strategic,
-            and unforgettable.
-          </p>
+          <p class="section-intro">Fast, strategic, and unforgettable — these are the games that shape my ideas.</p>
         </div>
 
         <div class="grid cards-grid">
@@ -348,12 +340,9 @@
             <div class="game-tile-icon">🔫</div>
             <div class="game-tile-tag">Battle Royale</div>
             <h3>Arena Drop</h3>
-            <p>
-              High-intensity matches, smart positioning, and clutch plays. Teaches
-              me to stay calm under pressure and make split-second decisions.
-            </p>
+            <p>High-intensity matches and clutch plays. Teaches me to stay calm under pressure and make split-second decisions.</p>
             <ul class="mini-list">
-              <li>Preferred role: Entry fragger / Support</li>
+              <li>Role: Entry fragger / Support</li>
               <li>Strength: Fast reactions &amp; movement</li>
               <li>Love: Last-circle mind games</li>
             </ul>
@@ -363,12 +352,9 @@
             <div class="game-tile-icon">🏎️</div>
             <div class="game-tile-tag">Racing</div>
             <h3>Neon Streets</h3>
-            <p>
-              Tight controls, perfect timing, and clean racing lines. Improves my
-              focus, coordination, and handling under speed.
-            </p>
+            <p>Tight controls, perfect timing, and clean racing lines. Improves focus, coordination, and handling at speed.</p>
             <ul class="mini-list">
-              <li>Preferred view: First person / Cockpit</li>
+              <li>View: First person / Cockpit</li>
               <li>Strength: Cornering &amp; boost timing</li>
               <li>Love: Time trial challenges</li>
             </ul>
@@ -378,12 +364,9 @@
             <div class="game-tile-icon">♟️</div>
             <div class="game-tile-tag">Strategy</div>
             <h3>Kingdom Tactician</h3>
-            <p>
-              Planning ahead, managing resources, and making smart trades. Helps me
-              think long-term and see the bigger strategic picture.
-            </p>
+            <p>Planning ahead, managing resources, and making smart trades. Helps me think long-term.</p>
             <ul class="mini-list">
-              <li>Preferred mode: Ranked strategy</li>
+              <li>Mode: Ranked strategy</li>
               <li>Strength: Reading opponents</li>
               <li>Love: Creative comebacks</li>
             </ul>
@@ -391,33 +374,436 @@
         </div>
       </section>
 
-      <!-- GAME IDEAS / PROJECTS -->
+      <!-- ════ ANIME SECTION ════ -->
+      <section id="anime" class="section anime-section">
+        <div class="anime-petals-bg" aria-hidden="true">
+          <span class="petal">🌸</span><span class="petal">🌸</span>
+          <span class="petal">🌸</span><span class="petal">🌸</span>
+          <span class="petal">🌸</span><span class="petal">🌸</span>
+          <span class="petal">🌸</span><span class="petal">🌸</span>
+        </div>
+
+        <div class="section-header">
+          <p class="section-kicker">アニメ &bull; Anime World</p>
+          <h2>My Favourite Anime</h2>
+          <p class="section-intro">
+            Anime shaped my love for epic storytelling, strong characters, and big dreams. These are the shows that hit deepest.
+          </p>
+        </div>
+
+        <!-- Anime favourite cards grid -->
+        <div class="anime-grid">
+
+          <div class="anime-card tilt-card">
+            <div class="anime-rank">01</div>
+            <div class="anime-icon-wrap">
+              <div class="anime-icon naruto-icon">🍥</div>
+            </div>
+            <div class="anime-card-body">
+              <span class="anime-genre-badge">Shōnen</span>
+              <h3>Naruto / Shippuden</h3>
+              <p class="anime-tagline">"I never go back on my word — that's my ninjutsu."</p>
+              <p>The ultimate story of a boy who never gave up. Naruto taught me that hard work, determination, and protecting friends is the real source of power.</p>
+              <div class="anime-tags">
+                <span class="anime-tag">🔥 Ninjutsu</span>
+                <span class="anime-tag">👥 Friendship</span>
+                <span class="anime-tag">💪 Never Give Up</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="anime-card tilt-card">
+            <div class="anime-rank">02</div>
+            <div class="anime-icon-wrap">
+              <div class="anime-icon demonslayer-icon">🌊</div>
+            </div>
+            <div class="anime-card-body">
+              <span class="anime-genre-badge">Shōnen</span>
+              <h3>Demon Slayer</h3>
+              <p class="anime-tagline">"Even if you can't feel anything, keep living."</p>
+              <p>Stunning animation, emotional story, and brutal battles. Tanjiro's journey taught me empathy, precision, and never losing your humanity.</p>
+              <div class="anime-tags">
+                <span class="anime-tag">⚔️ Breathing Forms</span>
+                <span class="anime-tag">🎨 Art Style</span>
+                <span class="anime-tag">❤️ Heart</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="anime-card tilt-card">
+            <div class="anime-rank">03</div>
+            <div class="anime-icon-wrap">
+              <div class="anime-icon aot-icon">⚡</div>
+            </div>
+            <div class="anime-card-body">
+              <span class="anime-genre-badge">Dark Fantasy</span>
+              <h3>Attack on Titan</h3>
+              <p class="anime-tagline">"Keep moving forward."</p>
+              <p>Complex characters, political drama, and mind-blowing plot twists. AoT redefined what anime can be — morally grey, brutal, and unforgettable.</p>
+              <div class="anime-tags">
+                <span class="anime-tag">🧠 Plot Twists</span>
+                <span class="anime-tag">⚙️ ODM Gear</span>
+                <span class="anime-tag">🌍 Deep Lore</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="anime-card tilt-card">
+            <div class="anime-rank">04</div>
+            <div class="anime-icon-wrap">
+              <div class="anime-icon onepiece-icon">⭐</div>
+            </div>
+            <div class="anime-card-body">
+              <span class="anime-genre-badge">Adventure</span>
+              <h3>One Piece</h3>
+              <p class="anime-tagline">"I'm going to be King of the Pirates!"</p>
+              <p>The greatest adventure ever told. Luffy's crew and their dreams inspired me to never settle for less than becoming the greatest at what I love.</p>
+              <div class="anime-tags">
+                <span class="anime-tag">🏴‍☠️ Adventure</span>
+                <span class="anime-tag">🌊 Grand Line</span>
+                <span class="anime-tag">🍖 Nakama</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="anime-card tilt-card">
+            <div class="anime-rank">05</div>
+            <div class="anime-icon-wrap">
+              <div class="anime-icon dbz-icon">🐲</div>
+            </div>
+            <div class="anime-card-body">
+              <span class="anime-genre-badge">Shōnen</span>
+              <h3>Dragon Ball Z</h3>
+              <p class="anime-tagline">"Power comes in response to a need, not a desire."</p>
+              <p>The OG. DBZ defined a generation's idea of power, sacrifice, and going beyond your limits. The Super Saiyan transformation still gives chills.</p>
+              <div class="anime-tags">
+                <span class="anime-tag">💥 Super Saiyan</span>
+                <span class="anime-tag">🌐 Multiple Universes</span>
+                <span class="anime-tag">👊 Epic Fights</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="anime-card tilt-card">
+            <div class="anime-rank">06</div>
+            <div class="anime-icon-wrap">
+              <div class="anime-icon mha-icon">💚</div>
+            </div>
+            <div class="anime-card-body">
+              <span class="anime-genre-badge">Superhero</span>
+              <h3>My Hero Academia</h3>
+              <p class="anime-tagline">"Go Beyond! PLUS ULTRA!"</p>
+              <p>A world of superpowers and heroes. Deku's arc from zero to hero is the most relatable shōnen journey — a born underdog who earns everything.</p>
+              <div class="anime-tags">
+                <span class="anime-tag">💪 Quirks</span>
+                <span class="anime-tag">🦸 Hero Society</span>
+                <span class="anime-tag">⚡ One For All</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Anime Stats Bar -->
+        <div class="anime-stats-row">
+          <div class="anime-stat-box">
+            <span class="anime-stat-num" data-target="6">0</span>
+            <span class="anime-stat-label">Series Seen</span>
+          </div>
+          <div class="anime-stat-box">
+            <span class="anime-stat-num" data-target="500">0</span>
+            <span class="anime-stat-label">+ Episodes</span>
+          </div>
+          <div class="anime-stat-box">
+            <span class="anime-stat-num" data-target="1">0</span>
+            <span class="anime-stat-label">Favourite Genre: Shōnen</span>
+          </div>
+          <div class="anime-stat-box">
+            <span class="anime-stat-num" data-target="10">0</span>
+            <span class="anime-stat-label">/ 10 Rating for Naruto</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════ POKÉMON SECTION ════ -->
+      <section id="pokemon" class="section pokemon-section">
+        <div class="section-header">
+          <p class="section-kicker">🔴 Pokémon Trainer</p>
+          <h2>My Pokémon Universe</h2>
+          <p class="section-intro">
+            Pokémon isn't just a game — it's a world. Here's my trainer card and the team I've built over countless battles.
+          </p>
+        </div>
+
+        <!-- TRAINER CARD -->
+        <div class="trainer-card-wrap">
+          <div class="trainer-card tilt-card">
+            <div class="trainer-card-header">
+              <div class="trainer-card-logo">
+                <span class="pokeball-icon">⚪</span>
+                <span class="trainer-card-title">TRAINER CARD</span>
+              </div>
+              <div class="trainer-card-id">ID: #100110</div>
+            </div>
+
+            <div class="trainer-card-body">
+              <div class="trainer-avatar-wrap">
+                <div class="trainer-avatar">
+                  <div class="trainer-avatar-inner">🧢</div>
+                  <div class="trainer-avatar-ring"></div>
+                </div>
+                <p class="trainer-name">ABHINAV</p>
+                <p class="trainer-region">Region: Kanto</p>
+              </div>
+
+              <div class="trainer-info">
+                <div class="trainer-stat-row">
+                  <span class="t-label">Trainer</span>
+                  <span class="t-value">Abhinav Rai</span>
+                </div>
+                <div class="trainer-stat-row">
+                  <span class="t-label">Starter</span>
+                  <span class="t-value">🔥 Charmander</span>
+                </div>
+                <div class="trainer-stat-row">
+                  <span class="t-label">Badges</span>
+                  <span class="t-value badges-row">
+                    <span class="badge-icon" title="Boulder Badge">🥇</span>
+                    <span class="badge-icon" title="Cascade Badge">💧</span>
+                    <span class="badge-icon" title="Thunder Badge">⚡</span>
+                    <span class="badge-icon" title="Rainbow Badge">🌈</span>
+                    <span class="badge-icon faded" title="Soul Badge">👻</span>
+                    <span class="badge-icon faded" title="Marsh Badge">🌿</span>
+                    <span class="badge-icon faded" title="Volcano Badge">🔥</span>
+                    <span class="badge-icon faded" title="Earth Badge">🌍</span>
+                  </span>
+                </div>
+                <div class="trainer-stat-row">
+                  <span class="t-label">Pokédex</span>
+                  <span class="t-value neon-text">142 Seen / 98 Caught</span>
+                </div>
+                <div class="trainer-stat-row">
+                  <span class="t-label">Goal</span>
+                  <span class="t-value">Catch &amp; Create 'em all</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="trainer-card-footer">
+              <div class="card-pokeball-deco">⚫</div>
+              <span>OFFICIAL POKÉMON LEAGUE</span>
+              <div class="card-pokeball-deco">⚫</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- POKEMON TEAM -->
+        <div class="team-header">
+          <h3>🎮 My Battle Team</h3>
+          <p>Flip a card to see move set &amp; stats!</p>
+        </div>
+
+        <div class="pokemon-team-grid">
+
+          <!-- Charizard -->
+          <div class="flip-card poke-flip">
+            <div class="flip-inner">
+              <div class="flip-front poke-card-front">
+                <div class="poke-type-badge type-fire">Fire / Flying</div>
+                <div class="poke-sprite">🦎🔥</div>
+                <p class="poke-name">Charizard</p>
+                <p class="poke-number">#006</p>
+                <div class="poke-hp-bar"><div class="poke-hp-fill" style="--hp:88%"></div></div>
+                <span class="poke-hp-label">HP: 88/100</span>
+              </div>
+              <div class="flip-back poke-card-back">
+                <h4>Charizard</h4>
+                <div class="poke-moves">
+                  <span class="move fire">🔥 Flamethrower</span>
+                  <span class="move flying">🌀 Air Slash</span>
+                  <span class="move dragon">🐉 Dragon Pulse</span>
+                  <span class="move fire">☀️ Solar Beam</span>
+                </div>
+                <div class="poke-base-stats">
+                  <div class="bs-row"><span>ATK</span><div class="bs-bar"><div style="width:84%"></div></div><span>84</span></div>
+                  <div class="bs-row"><span>SPD</span><div class="bs-bar"><div style="width:100%"></div></div><span>100</span></div>
+                  <div class="bs-row"><span>DEF</span><div class="bs-bar"><div style="width:78%"></div></div><span>78</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pikachu -->
+          <div class="flip-card poke-flip">
+            <div class="flip-inner">
+              <div class="flip-front poke-card-front">
+                <div class="poke-type-badge type-electric">Electric</div>
+                <div class="poke-sprite">⚡🐭</div>
+                <p class="poke-name">Pikachu</p>
+                <p class="poke-number">#025</p>
+                <div class="poke-hp-bar"><div class="poke-hp-fill" style="--hp:70%"></div></div>
+                <span class="poke-hp-label">HP: 70/100</span>
+              </div>
+              <div class="flip-back poke-card-back">
+                <h4>Pikachu</h4>
+                <div class="poke-moves">
+                  <span class="move electric">⚡ Thunderbolt</span>
+                  <span class="move electric">🌩️ Thunder</span>
+                  <span class="move normal">💨 Quick Attack</span>
+                  <span class="move normal">😴 Charm</span>
+                </div>
+                <div class="poke-base-stats">
+                  <div class="bs-row"><span>ATK</span><div class="bs-bar"><div style="width:55%"></div></div><span>55</span></div>
+                  <div class="bs-row"><span>SPD</span><div class="bs-bar"><div style="width:90%"></div></div><span>90</span></div>
+                  <div class="bs-row"><span>DEF</span><div class="bs-bar"><div style="width:40%"></div></div><span>40</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lucario -->
+          <div class="flip-card poke-flip">
+            <div class="flip-inner">
+              <div class="flip-front poke-card-front">
+                <div class="poke-type-badge type-fighting">Fighting / Steel</div>
+                <div class="poke-sprite">🐺⚡</div>
+                <p class="poke-name">Lucario</p>
+                <p class="poke-number">#448</p>
+                <div class="poke-hp-bar"><div class="poke-hp-fill" style="--hp:91%"></div></div>
+                <span class="poke-hp-label">HP: 91/100</span>
+              </div>
+              <div class="flip-back poke-card-back">
+                <h4>Lucario</h4>
+                <div class="poke-moves">
+                  <span class="move fighting">💥 Aura Sphere</span>
+                  <span class="move steel">⚙️ Iron Tail</span>
+                  <span class="move fighting">🥊 Close Combat</span>
+                  <span class="move psychic">🔮 Psychic</span>
+                </div>
+                <div class="poke-base-stats">
+                  <div class="bs-row"><span>ATK</span><div class="bs-bar"><div style="width:110%"></div></div><span>110</span></div>
+                  <div class="bs-row"><span>SPD</span><div class="bs-bar"><div style="width:90%"></div></div><span>90</span></div>
+                  <div class="bs-row"><span>DEF</span><div class="bs-bar"><div style="width:70%"></div></div><span>70</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gengar -->
+          <div class="flip-card poke-flip">
+            <div class="flip-inner">
+              <div class="flip-front poke-card-front">
+                <div class="poke-type-badge type-ghost">Ghost / Poison</div>
+                <div class="poke-sprite">👻🌙</div>
+                <p class="poke-name">Gengar</p>
+                <p class="poke-number">#094</p>
+                <div class="poke-hp-bar"><div class="poke-hp-fill" style="--hp:80%"></div></div>
+                <span class="poke-hp-label">HP: 80/100</span>
+              </div>
+              <div class="flip-back poke-card-back">
+                <h4>Gengar</h4>
+                <div class="poke-moves">
+                  <span class="move ghost">👻 Shadow Ball</span>
+                  <span class="move psychic">🔮 Psychic</span>
+                  <span class="move dark">🌑 Dark Pulse</span>
+                  <span class="move poison">☣️ Sludge Bomb</span>
+                </div>
+                <div class="poke-base-stats">
+                  <div class="bs-row"><span>ATK</span><div class="bs-bar"><div style="width:65%"></div></div><span>65</span></div>
+                  <div class="bs-row"><span>SPD</span><div class="bs-bar"><div style="width:110%"></div></div><span>110</span></div>
+                  <div class="bs-row"><span>DEF</span><div class="bs-bar"><div style="width:60%"></div></div><span>60</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Greninja -->
+          <div class="flip-card poke-flip">
+            <div class="flip-inner">
+              <div class="flip-front poke-card-front">
+                <div class="poke-type-badge type-water">Water / Dark</div>
+                <div class="poke-sprite">🐸💧</div>
+                <p class="poke-name">Greninja</p>
+                <p class="poke-number">#658</p>
+                <div class="poke-hp-bar"><div class="poke-hp-fill" style="--hp:95%"></div></div>
+                <span class="poke-hp-label">HP: 95/100</span>
+              </div>
+              <div class="flip-back poke-card-back">
+                <h4>Greninja</h4>
+                <div class="poke-moves">
+                  <span class="move water">💧 Surf</span>
+                  <span class="move dark">🌑 Night Slash</span>
+                  <span class="move ice">❄️ Ice Beam</span>
+                  <span class="move water">🌊 Water Shuriken</span>
+                </div>
+                <div class="poke-base-stats">
+                  <div class="bs-row"><span>ATK</span><div class="bs-bar"><div style="width:95%"></div></div><span>95</span></div>
+                  <div class="bs-row"><span>SPD</span><div class="bs-bar"><div style="width:115%"></div></div><span>122</span></div>
+                  <div class="bs-row"><span>DEF</span><div class="bs-bar"><div style="width:67%"></div></div><span>67</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mewtwo -->
+          <div class="flip-card poke-flip">
+            <div class="flip-inner">
+              <div class="flip-front poke-card-front legendary">
+                <div class="poke-type-badge type-psychic">Psychic ⭐ Legendary</div>
+                <div class="poke-sprite legendary-sprite">🌌🧬</div>
+                <p class="poke-name">Mewtwo</p>
+                <p class="poke-number">#150</p>
+                <div class="poke-hp-bar"><div class="poke-hp-fill legendary-hp" style="--hp:100%"></div></div>
+                <span class="poke-hp-label">HP: 100/100 💯</span>
+              </div>
+              <div class="flip-back poke-card-back">
+                <h4>Mewtwo ⭐</h4>
+                <div class="poke-moves">
+                  <span class="move psychic">🔮 Psystrike</span>
+                  <span class="move ice">❄️ Ice Beam</span>
+                  <span class="move electric">⚡ Thunderbolt</span>
+                  <span class="move psychic">✨ Aura Storm</span>
+                </div>
+                <div class="poke-base-stats">
+                  <div class="bs-row"><span>ATK</span><div class="bs-bar legendary-bar"><div style="width:100%"></div></div><span>154</span></div>
+                  <div class="bs-row"><span>SPD</span><div class="bs-bar legendary-bar"><div style="width:100%"></div></div><span>130</span></div>
+                  <div class="bs-row"><span>DEF</span><div class="bs-bar legendary-bar"><div style="width:90%"></div></div><span>90</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pokéball decoration row -->
+        <div class="pokeball-row" aria-hidden="true">
+          <div class="pokeball spinning"><div class="pokeball-line"></div></div>
+          <div class="pokeball spinning delay-1"><div class="pokeball-line"></div></div>
+          <div class="pokeball spinning delay-2"><div class="pokeball-line"></div></div>
+        </div>
+      </section>
+
+      <!-- ════ GAME IDEAS / PROJECTS ════ -->
       <section id="projects" class="section">
         <div class="section-header">
           <p class="section-kicker">Game Concepts</p>
           <h2>Game Ideas From My Imagination</h2>
           <p class="section-intro">
-            I may be in Class 10, but my mind is already full of game concepts.
-            These are idea-level "projects" — the games I'd love to build one day as
-            I keep learning coding and design.
+            Inspired by anime, Pokémon, and classic games — these are my original game concepts that I'd love to build.
           </p>
         </div>
 
         <div class="game-concepts-grid">
-          <!-- Concept 1 -->
-          <div class="concept-card tilt-card" id="concept-1">
+          <div class="concept-card tilt-card">
             <div class="concept-number">01</div>
             <div class="concept-tag">Runner / Cyberpunk</div>
             <h3>Neon Runner City</h3>
             <p class="concept-tagline">Endless runner with story-based missions.</p>
-            <p>
-              You play as a courier in a neon futuristic city, dodging traffic,
-              jumping rooftops, and unlocking secret routes. Speed meets storytelling.
-            </p>
+            <p>Play as a courier in a neon futuristic city, dodging traffic, jumping rooftops — inspired by cyberpunk anime aesthetics.</p>
             <ul class="mini-list">
-              <li>Core: Smooth parkour + branching missions</li>
-              <li>Mechanics: Slide, wall-run, slow-motion jumps</li>
-              <li>Inspiration: Mirror's Edge + Cyberpunk</li>
+              <li>Core: Parkour + branching missions</li>
+              <li>Mechanics: Slide, wall-run, slow-motion</li>
+              <li>Vibe: Ghost in the Shell meets Mirror's Edge</li>
             </ul>
             <div class="concept-footer">
               <span class="concept-status status-concept">💡 Concept</span>
@@ -425,21 +811,16 @@
             </div>
           </div>
 
-          <!-- Concept 2 -->
-          <div class="concept-card tilt-card" id="concept-2">
+          <div class="concept-card tilt-card">
             <div class="concept-number">02</div>
             <div class="concept-tag">Strategy / MOBA</div>
             <h3>Sky Chess Arena</h3>
-            <p class="concept-tagline">Strategy game mixing chess and arena combat.</p>
-            <p>
-              Classic chess pieces come to life in a floating arena. Each piece has
-              special abilities and cooldowns. Think like a chess master, fight like
-              an arena champion.
-            </p>
+            <p class="concept-tagline">Strategy meets arena combat.</p>
+            <p>Chess pieces come alive with special abilities. Think Pokémon battles meets chess — every piece has a unique move set.</p>
             <ul class="mini-list">
               <li>Core: Strategy + real-time action</li>
-              <li>Mechanics: Ability combos &amp; special moves</li>
-              <li>Inspiration: Chess, MOBAs, Hero Shooters</li>
+              <li>Mechanics: Ability combos &amp; cooldowns</li>
+              <li>Vibe: Chess + MOBAs + Pokémon</li>
             </ul>
             <div class="concept-footer">
               <span class="concept-status status-concept">💡 Concept</span>
@@ -447,21 +828,16 @@
             </div>
           </div>
 
-          <!-- Concept 3 -->
-          <div class="concept-card tilt-card" id="concept-3">
+          <div class="concept-card tilt-card">
             <div class="concept-number">03</div>
             <div class="concept-tag">Puzzle / Time</div>
             <h3>Puzzle of Time</h3>
-            <p class="concept-tagline">Story-driven puzzle game about time loops.</p>
-            <p>
-              You wake up in the same day again and again. Each loop lets you keep
-              knowledge but not items. Use clues from previous loops to solve deeper
-              puzzles.
-            </p>
+            <p class="concept-tagline">Time-loop puzzle adventure.</p>
+            <p>Wake up in the same day again and again. Use knowledge from previous loops to solve deeper puzzles — anime-style mystery narrative.</p>
             <ul class="mini-list">
               <li>Core: Learning-based progression</li>
               <li>Mechanics: Timelines, clues, hidden routes</li>
-              <li>Inspiration: Outer Wilds + 12 Minutes</li>
+              <li>Vibe: Steins;Gate meets Outer Wilds</li>
             </ul>
             <div class="concept-footer">
               <span class="concept-status status-concept">💡 Concept</span>
@@ -469,21 +845,16 @@
             </div>
           </div>
 
-          <!-- Concept 4 -->
-          <div class="concept-card tilt-card" id="concept-4">
+          <div class="concept-card tilt-card">
             <div class="concept-number">04</div>
-            <div class="concept-tag">RPG / Open World</div>
+            <div class="concept-tag">RPG / Anime-Inspired</div>
             <h3>Shadow Realm Chronicles</h3>
-            <p class="concept-tagline">Dark fantasy RPG with moral decisions.</p>
-            <p>
-              An open-world RPG where every major choice creates ripple effects
-              across the world. Join the light, embrace the shadow, or forge your own
-              path between both.
-            </p>
+            <p class="concept-tagline">Dark fantasy RPG — anime arcs with player choices.</p>
+            <p>An open-world RPG where story arcs unfold like anime seasons. Every choice reshapes alliances. Inspired by SAO, DanMachi, and Re:Zero.</p>
             <ul class="mini-list">
-              <li>Core: Branching narrative + open exploration</li>
-              <li>Mechanics: Morality meter, faction alliances</li>
-              <li>Inspiration: The Witcher + Dark Souls</li>
+              <li>Core: Branching narrative + anime arcs</li>
+              <li>Mechanics: Morality system, faction fights</li>
+              <li>Vibe: SAO + Elden Ring + Demon Slayer</li>
             </ul>
             <div class="concept-footer">
               <span class="concept-status status-design">🖊️ Designing</span>
@@ -491,39 +862,31 @@
             </div>
           </div>
 
-          <!-- Concept 5 -->
-          <div class="concept-card tilt-card" id="concept-5">
+          <div class="concept-card tilt-card">
             <div class="concept-number">05</div>
-            <div class="concept-tag">Survival / Sci-Fi</div>
-            <h3>Last Signal</h3>
-            <p class="concept-tagline">Solo survival on an alien crash site.</p>
-            <p>
-              You crash-land on an alien planet with one broken radio. Explore,
-              scavenge, craft, and build a signal tower — all while fending off
-              evolving alien threats that adapt to your tactics.
-            </p>
+            <div class="concept-tag">Monster Capture / RPG</div>
+            <h3>Spirit Catcher</h3>
+            <p class="concept-tagline">Original monster-capture RPG inspired by Pokémon.</p>
+            <p>A creature-collection RPG set in an ancient spirit world. Capture elemental spirits, train them, and battle other spirit tamers across a huge open map.</p>
             <ul class="mini-list">
-              <li>Core: Adaptive AI + resource management</li>
-              <li>Mechanics: Crafting, base building, stealth</li>
-              <li>Inspiration: Subnautica + Alien Isolation</li>
+              <li>Core: Capture, evolve, battle spirits</li>
+              <li>Mechanics: Elemental weaknesses &amp; synergies</li>
+              <li>Vibe: Pokémon + Naruto's Summoning Jutsu</li>
             </ul>
             <div class="concept-footer">
               <span class="concept-status status-design">🖊️ Designing</span>
-              <span class="concept-genre">Survival / Sci-Fi</span>
+              <span class="concept-genre">Monster RPG</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ACHIEVEMENTS -->
+      <!-- ════ ACHIEVEMENTS ════ -->
       <section id="achievements" class="section">
         <div class="section-header">
           <p class="section-kicker">Achievements</p>
           <h2>My Gaming &amp; Personal Highlights</h2>
-          <p class="section-intro">
-            Milestones from the battlefield, the squad, and the journey of becoming
-            a future game developer.
-          </p>
+          <p class="section-intro">Milestones from the battlefield, the squad, and the journey of becoming a future game developer.</p>
         </div>
 
         <div class="grid cards-grid">
@@ -570,17 +933,17 @@
           <article class="flip-card">
             <div class="flip-inner">
               <div class="flip-front card achievement-card">
-                <div class="ach-icon">💡</div>
-                <h3>Learning &amp; Growth</h3>
+                <div class="ach-icon">🌸</div>
+                <h3>Otaku &amp; Growth</h3>
                 <p>Hover to see details</p>
                 <div class="ach-shine"></div>
               </div>
               <div class="flip-back card">
-                <h3>Learning &amp; Growth</h3>
+                <h3>Otaku &amp; Growth</h3>
                 <ul class="mini-list">
-                  <li>Experimenting with HTML/CSS mini-games</li>
-                  <li>Studying game engine tutorials daily</li>
-                  <li>Maintains a game ideas notebook</li>
+                  <li>Completed 6+ anime series from start to end</li>
+                  <li>Built a Pokémon competitive team strategy</li>
+                  <li>Maintains a game &amp; anime ideas notebook</li>
                   <li>Built this portfolio from scratch!</li>
                 </ul>
               </div>
@@ -589,15 +952,12 @@
         </div>
       </section>
 
-      <!-- CONTACT -->
+      <!-- ════ CONTACT ════ -->
       <section id="contact" class="section">
         <div class="section-header">
           <p class="section-kicker">Let's Connect</p>
-          <h2>Team Up Or Talk About Games</h2>
-          <p class="section-intro">
-            Want to play together, discuss game ideas, or just connect? Reach out
-            below!
-          </p>
+          <h2>Team Up Or Talk About Games &amp; Anime</h2>
+          <p class="section-intro">Want to play together, discuss game ideas, talk anime, or trade Pokémon? Reach out below!</p>
         </div>
 
         <div class="contact-layout">
@@ -606,53 +966,31 @@
             <form class="contact-form" id="contactForm">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                />
+                <input type="text" id="name" name="name" placeholder="Your name" required />
               </div>
-
               <div class="form-group">
                 <label for="email">Email or In-Game ID</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="Email or in-game ID"
-                  required
-                />
+                <input type="text" id="email" name="email" placeholder="Email or in-game ID" required />
               </div>
-
               <div class="form-group">
                 <label for="reason">Reason</label>
                 <select id="reason" name="reason">
                   <option value="play">Play a game together</option>
-                  <option value="ideas">Talk about game ideas</option>
+                  <option value="anime">Talk about anime</option>
+                  <option value="pokemon">Trade or battle Pokémon</option>
+                  <option value="ideas">Discuss game ideas</option>
                   <option value="learn">Learn game dev together</option>
                   <option value="other">Other</option>
                 </select>
               </div>
-
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  placeholder="Write your message here..."
-                ></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
               </div>
-
               <button type="submit" class="btn btn-primary full-width">
-                <span class="btn-glow"></span>
-                🚀 Send Message
+                <span class="btn-glow"></span>🚀 Send Message
               </button>
-              <p class="form-note">
-                Front-end demo — connect to a real email service later.
-              </p>
+              <p class="form-note">Front-end demo — connect to a real email service later.</p>
             </form>
           </div>
 
@@ -661,24 +999,21 @@
             <ul class="mini-list contact-info-list">
               <li><strong>Name:</strong> Abhinav Rai</li>
               <li><strong>Class:</strong> 10</li>
-              <li><strong>Focus:</strong> Gaming &amp; Game Creation</li>
-              <li><strong>Location:</strong> India</li>
+              <li><strong>Focus:</strong> Gaming &amp; Game Dev</li>
+              <li><strong>Anime Fan:</strong> ⛩️ Otaku Level 9000</li>
+              <li><strong>Pokémon Trainer:</strong> 🔴 Kanto Region</li>
               <li><strong>Status:</strong> <span class="online-badge">🟢 Online</span></li>
             </ul>
 
             <div class="profile-tags">
               <span class="pill">🎮 Future Game Dev</span>
-              <span class="pill">🏆 Esports Fan</span>
-              <span class="pill">🧠 Creative Thinker</span>
+              <span class="pill">🌸 Anime Otaku</span>
+              <span class="pill">🔴 Pokémon Trainer</span>
               <span class="pill">⚡ Strategic Player</span>
             </div>
 
             <div class="contact-divider"></div>
-
-            <p class="connect-note">
-              You can also connect on gaming platforms — Steam, Epic, or any arena
-              where great games are played.
-            </p>
+            <p class="connect-note">Also open to talking about favourite anime arcs, Pokémon team building, or just gaming in general!</p>
           </div>
         </div>
       </section>
@@ -690,8 +1025,8 @@
           <span class="logo-icon-sm">AR</span>
           <span>Abhinav Rai</span>
         </div>
-        <p>Built with passion for gaming and imagination. &copy; <span id="year"></span></p>
-        <p class="footer-sub">Level up your dreams 🎮</p>
+        <p>Built with passion for gaming, anime, and imagination. &copy; <span id="year"></span></p>
+        <p class="footer-sub">Level up your dreams 🎮 &bull; Never give up 🌸 &bull; Gotta catch 'em all! 🔴</p>
       </div>
     </footer>
 
