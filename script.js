@@ -101,34 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", () => { SW=window.innerWidth; SH=window.innerHeight; sCanvas.width=SW; sCanvas.height=SH; });
   }
 
-  /* ══════════════════════════════════════════
-     ANIME QUOTE TYPING EFFECT
-  ══════════════════════════════════════════ */
-  const QUOTES = [
-    "Power comes in response to a need, not a desire. — Goku",
-    "I never go back on my word — that's my ninjutsu. — Naruto",
-    "Keep moving forward. — Eren Yeager",
-    "Go Beyond! PLUS ULTRA! — Izuku Midoriya",
-    "I'm going to be King of the Pirates! — Luffy",
-    "Even if you can't feel anything, keep living. — Tanjiro",
-  ];
-  const quoteEl = document.getElementById("animeQuoteText");
-  if (quoteEl) {
-    let qi = 0, ci = 0, deleting = false;
-    const typeAnime = () => {
-      const current = QUOTES[qi];
-      if (!deleting) {
-        quoteEl.textContent = current.slice(0, ci++);
-        if (ci > current.length) { deleting = true; setTimeout(typeAnime, 2200); return; }
-        setTimeout(typeAnime, 48);
-      } else {
-        quoteEl.textContent = current.slice(0, ci--);
-        if (ci < 0) { deleting = false; ci = 0; qi = (qi+1) % QUOTES.length; setTimeout(typeAnime, 400); return; }
-        setTimeout(typeAnime, 22);
-      }
-    };
-    setTimeout(typeAnime, 800);
-  }
+
 
   /* ══════════════════════════════════════════
      ROLE SWITCHER
